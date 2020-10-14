@@ -10184,3 +10184,56 @@ section.resume-section .resume-section-content {
   display: inline-block;
   width: 45%;
 }
+
+.roundCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 75px;
+  margin-bottom: 1cm;
+  width: 100%;
+}
+
+.roundCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.columnTitle {
+  float: left;
+  width: 60%;
+  margin-left: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 0px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#skills {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#skills td, #customers th {
+  border: 1px solid #e9dcfa;
+  padding: 8px;
+  width: 100px;
+}
+
+#skills tr:nth-child(even){background-color: #e2d3fa;}
+#skills tr:nth-child(odd){background-color: #f5effd;}
+
+#skills tr:hover {background-color: #d0b8f8;}
