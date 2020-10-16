@@ -39,4 +39,51 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+    $(".plus-icon").click(function() {
+        console.log(this)
+
+        var id = $(this).attr("id");
+        if(id.includes("Minus")){
+            
+            id = id.substring(0, id.length-5);
+            console.log(id)
+            var text = $(`#${id}T`)
+            text.slideUp(200);  
+            var plus = $(`#${id}`)
+            plus.show();
+            $(this).hide(); 
+        }else{
+            var text = $(`#${$(this).attr("id")}T`)
+            text.slideDown(600);
+            var minus = $(`#${$(this).attr("id")}Minus`)
+            minus.show();
+            $(this).hide();
+        }
+
+        
+    });
+
+    $(".plus-icon-down").click(function() {
+        console.log(this)
+
+        var id = $(this).attr("id");
+        if(id.includes("Minus")){
+            
+            id = id.substring(0, id.length-5);
+            console.log(id)
+            var text = $(`#${id}T`)
+            text.slideUp(200);  
+            var plus = $(`#${id}`)
+            plus.show();
+            $(this).hide(); 
+        }else{
+            var text = $(`#${$(this).attr("id")}T`)
+            text.slideDown(600);
+            var minus = $(`#${$(this).attr("id")}Minus`)
+            minus.show();
+            $(this).hide();
+        }
+    });
 })(jQuery); // End of use strict
+

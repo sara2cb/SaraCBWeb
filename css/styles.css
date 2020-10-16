@@ -10156,6 +10156,28 @@ section.resume-section .resume-section-content {
   border: 3px solid #5400b4;
   font-size: 1rem;
   margin-right: 1.5rem;
+  margin-left: 80%;
+}
+.plus-icon:hover {
+  border: 3px solid #1b003a;
+}
+
+.plus-icon-down {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  /* background-color: #5400b4; */
+  border-radius: 20%;
+  border: 3px solid #5400b4;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 46%;
+  margin-top: 10px;
+}
+.plus-icon-down:hover {
+  border: 3px solid #1b003a;
 }
 
 .card {
@@ -10221,10 +10243,23 @@ section.resume-section .resume-section-content {
   clear: both;
 }
 
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+  display: none;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  display: block;
+}
+
 #skills {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 90%;
+  width: 95%;
 }
 
 #skills td, #customers th {
@@ -10233,7 +10268,21 @@ section.resume-section .resume-section-content {
   width: 100px;
 }
 
-#skills tr:nth-child(even){background-color: #e2d3fa;}
-#skills tr:nth-child(odd){background-color: #f5effd;}
+#skills tr:nth-child(even){background-color: #f5effd;}
+#skills tr:nth-child(odd){background-color: #e2d3fa;}
 
-#skills tr:hover {background-color: #d0b8f8;}
+#skills tr:hover {background-color: #e2d3fa;}
+#skillsFirst {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  table-layout:fixed;
+}
+
+#skillsFirst td, #customers th {
+  border: 1px solid #e9dcfa;
+  padding: 8px;
+  width: 100px;
+}
+
+#skillsFirst tr:nth-child(odd){background-color: #f5effd;}
